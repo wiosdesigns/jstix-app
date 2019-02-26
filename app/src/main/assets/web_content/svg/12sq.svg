@@ -1,0 +1,52 @@
+<svg version="1.1" width="1000" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect
+    class="cbtn" mapto="q"
+    x="50" y="50" width="150" height="100" fill="#ffffff"
+  />
+  <rect
+    class="cbtn" mapto="down"
+    x="300" y="50" width="150" height="100" fill="#ffffff"
+  />
+  <rect
+    class="cbtn" mapto="down"
+    x="550" y="50" width="150" height="100" fill="#ffffff"
+  />
+  <rect
+    class="cbtn" mapto="down"
+    x="800" y="50" width="150" height="100" fill="#ffffff"
+  />
+
+  <rect
+    class="cbtn" mapto="down"
+    x="50" y="200" width="150" height="100" fill="#ffffff"
+  />
+  <rect
+    class="cbtn" mapto="down"
+    x="300" y="200" width="150" height="100" fill="#ffffff"
+  />
+  <rect
+    class="cbtn" mapto="down"
+    x="550" y="200" width="150" height="100" fill="#ffffff"
+  />
+  <rect
+    class="cbtn" mapto="down"
+    x="800" y="200" width="150" height="100" fill="#ffffff"
+  />
+
+  <rect
+    class="cbtn" mapto="down"
+    x="50" y="350" width="150" height="100" fill="#ffffff"
+  />
+  <rect
+    class="cbtn" mapto="down"
+    x="300" y="350" width="150" height="100" fill="#ffffff"
+  />
+  <rect
+    class="cbtn" mapto="down"
+    x="550" y="350" width="150" height="100" fill="#ffffff"
+  />
+  <rect
+    class="cbtn" mapto="down"
+    x="800" y="350" width="150" height="100" fill="#ffffff"
+  />
+</svg>

@@ -1,0 +1,100 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  user-select: none;
+}
+body{
+  text-align: center;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 50vw;
+  color: #ffffff;
+  background: #000000;
+  font-family: monospace;
+  font-size: 4vh;
+}
+nav{
+  background: #000000;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+}
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  color: #2080d0;
+  padding: 3vh;
+}
+nav a:last-child,nav a:nth-child(4){
+  color: #20d080;
+
+}
+section{
+  background: #000000;
+  display: none;
+}
+#home{
+  padding: 3vh;
+}
+input{
+  background: #02080d;
+  padding: 2vh 5vh;
+  margin-top: 5vh;
+  outline: none;
+  border: none;
+  border-bottom: 0.5vh solid #2080d0;
+  border-radius: 1vh;
+  font-size: 4vh;
+  color: #2080d0;
+  font-family: monospace;
+  text-align: center;
+}
+button{
+  background: #2080d0;
+  padding: 2vh 5vh;
+  margin: 5vh 2vh;
+  outline: none;
+  border: none;
+  border-radius: 15vh;
+  font-size: 4vh;
+  color: #ffffff;
+  font-family: monospace;
+}
+#status{
+  font-size: 3vh;
+}
+#layout{
+  overflow-y: scroll;
+  text-align: center;
+}
+#layout p{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background: #02080d;
+  padding: 5vh 5vh 0vh 5vh;
+  margin: 5vh 10vw;
+  text-align: center;
+}
+#layout p:first-child{
+  background: #2080d0;
+}
+#layout img{
+  grid-column: span 2;
+  width: 100%;
+  height: auto;
+  border: 5px solid white;
+  border-radius: 3px;
+  text-align: center;
+}
+#layout span{
+  display: inline-block;
+  text-align: left;
+  padding: 7vh 0;
+}
+#play svg{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#play svg:first-child{
+  display: inline-block;
+}
