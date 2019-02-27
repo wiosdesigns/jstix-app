@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>jstix</title>
+  <title>JStix</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <meta name="theme-color" content="#000000">
@@ -19,20 +19,38 @@
     JStix
   </section>
   <section id="connect">
-    <input id="hostadd" type="url" placeholder="host address">
-    <br>
-    <button onclick=init()>Connect</button>
-    <br><br>
-    <span id="status"></span>
+    <div id="conngrid">
+      <span id="hostadd"></span>
+      <button onclick=init()>Connect</button>
+
+      <button class="num" onclick="hostinput('1')">1</button>
+      <button class="num" onclick="hostinput('2')">2</button>
+      <button class="num" onclick="hostinput('3')">3</button>
+      <button class="num" onclick="hostinput('0')">0</button>
+
+      <button class="num" onclick="hostinput('4')">4</button>
+      <button class="num" onclick="hostinput('5')">5</button>
+      <button class="num" onclick="hostinput('6')">6</button>
+      <button class="num" onclick="hostinput('.')">.</button>
+
+      <button class="num" onclick="hostinput('7')">7</button>
+      <button class="num" onclick="hostinput('8')">8</button>
+      <button class="num" onclick="hostinput('9')">9</button>
+      <button class="num" onclick="hostinput('x')">&ltx</button>
+    </div>
   </section>
   <section id="layout">
-    {% for f in svgs %}
-      <p id="sel_{{f.name}}">
-        <img src="svg/{{f.name}}.svg">
-        <span>{{f.name}}</span>
-        <button onclick="use('{{f.name}}')">Use This</button>
-      </p>
-    {% endfor %}
+    <div id="layoutgrid">
+      <button onclick="changelayout(-1)">&lt</button>
+      {% for f in svgs %}
+        <p id="sel_{{f.name}}">
+          <img src="svg/{{f.name}}.svg">
+          <br>
+          <span>{{f.name}}</span>
+        </p>
+      {% endfor %}
+      <button onclick="changelayout(1)">&gt</button>
+    </div>
   </section>
   <section id="play">
     {% for f in svgs %}
@@ -41,4 +59,53 @@
       </svg>
     {% endfor %}
   </section>
+  <div id="fullmsg">
+    <span id="notifmsg"></span>
+    <button onclick="hidenotif()">Ok</button>
+  </div>
+  <div id="keyselector">
+    <div>Select Keys</div>
+    <div id="keylist">
+      <button id="key_up" class="keybtn" onclick="togglekey(this)">Up</button>
+      <button id="key_down" class="keybtn" onclick="togglekey(this)">Down</button>
+      <button id="key_left" class="keybtn" onclick="togglekey(this)">Left</button>
+      <button id="key_right" class="keybtn" onclick="togglekey(this)">Right</button>
+      <button id="key_space" class="keybtn" onclick="togglekey(this)">Space</button>
+
+      <button id="key_a" class="keybtn" onclick="togglekey(this)">a</button>
+
+      <button id="key_b" class="keybtn" onclick="togglekey(this)">b</button>
+      <button id="key_c" class="keybtn" onclick="togglekey(this)">c</button>
+      <button id="key_d" class="keybtn" onclick="togglekey(this)">d</button>
+      <button id="key_e" class="keybtn" onclick="togglekey(this)">e</button>
+      <button id="key_f" class="keybtn" onclick="togglekey(this)">f</button>
+
+      <button id="key_g" class="keybtn" onclick="togglekey(this)">g</button>
+      <button id="key_h" class="keybtn" onclick="togglekey(this)">h</button>
+      <button id="key_i" class="keybtn" onclick="togglekey(this)">i</button>
+      <button id="key_j" class="keybtn" onclick="togglekey(this)">j</button>
+      <button id="key_k" class="keybtn" onclick="togglekey(this)">k</button>
+
+      <button id="key_l" class="keybtn" onclick="togglekey(this)">l</button>
+      <button id="key_m" class="keybtn" onclick="togglekey(this)">m</button>
+      <button id="key_n" class="keybtn" onclick="togglekey(this)">n</button>
+      <button id="key_o" class="keybtn" onclick="togglekey(this)">o</button>
+      <button id="key_p" class="keybtn" onclick="togglekey(this)">p</button>
+
+      <button id="key_q" class="keybtn" onclick="togglekey(this)">q</button>
+      <button id="key_r" class="keybtn" onclick="togglekey(this)">r</button>
+      <button id="key_s" class="keybtn" onclick="togglekey(this)">s</button>
+      <button id="key_t" class="keybtn" onclick="togglekey(this)">t</button>
+      <button id="key_u" class="keybtn" onclick="togglekey(this)">u</button>
+
+      <button id="key_v" class="keybtn" onclick="togglekey(this)">v</button>
+      <button id="key_w" class="keybtn" onclick="togglekey(this)">w</button>
+      <button id="key_x" class="keybtn" onclick="togglekey(this)">x</button>
+      <button id="key_y" class="keybtn" onclick="togglekey(this)">y</button>
+      <button id="key_z" class="keybtn" onclick="togglekey(this)">z</button>
+
+
+    </div>
+    <button id="setkeylist">Done</button>
+  </div>
 </body>
